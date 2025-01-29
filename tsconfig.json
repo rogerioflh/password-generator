@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "app/src/components/modal/index.tsx"  ]
+, "app/src/components/modal/index.js", "app/src/hooks/useStorage.js", "app/index.js", "app/src/routes.js", "app/src/pages/passwords/index.js", "app/src/pages/home/index.js"  ]
 }

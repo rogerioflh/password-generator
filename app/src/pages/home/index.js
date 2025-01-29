@@ -1,16 +1,11 @@
 import { useState } from 'react'
 import {View, Text, StyleSheet, Image, TouchableOpacity, Modal} from 'react-native'
 import Slider from '@react-native-community/slider'
-import { ModalPassword } from './src/components/modal'
+import { ModalPassword } from '../../components/modal'
 
-let charset = "abdcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789Çç+=-_{}[]^~´`:;><.,/?|\!@#$%¨&*()ªº°"
+let charset = "abdcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789Çç+=-_{}[]^~´`:;><.,/?|\!@#$%¨&*()ªº°£¢¬§"
 
-export default function App(){
-/*cria um estado mutavel que permite o usuário atulizar alguns 
-valores na pagina sem que ele precise dar um refresh*/
-/* size = nome do useState
-seteSize = ação que pode alterar o valor do useState 
-entre () esta o valor do useState*/
+export function Home(){
     const [size, seteSize] = useState(10)
     const [passwordValue, setPasswordValue] = useState("")
     const [modalVisible, setModalVisible] = useState(false)
@@ -27,7 +22,7 @@ entre () esta o valor do useState*/
 
     return(
         <View style={styles.container}>
-            <Image source={require("./src/assets/logo.png")}
+            <Image source={require("../../assets/logo.png")}
             style={styles.logo}/>
         
             <Text style={styles.title}> {size} caracteres </Text>
@@ -48,7 +43,7 @@ entre () esta o valor do useState*/
             </TouchableOpacity>
 
             <Modal visible={modalVisible} animationType='fade' transparent={true}>
-                <ModalPassword/>
+                <ModalPassword password={passwordValue} handleClose={ () => setModalVisible(false) }/>
             </Modal>
         </View>
     )
