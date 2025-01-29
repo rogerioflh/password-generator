@@ -37,5 +37,6 @@ npm run web
 ```
 
 ## References:
+- [Criando um APP com React Native - Sujeito Programador](https://www.youtube.com/watch?v=VDgihqrZUQg&list=WL&index=11&t=1s)
 - [docs.expo](https://docs.expo.dev/)
 - [React Native](https://reactnative.dev/)
