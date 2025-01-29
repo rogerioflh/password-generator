@@ -53,7 +53,9 @@ const styles = StyleSheet.create({
     title: {
         fountSize: 18,
         color: "#FFF",
-        fontweight: 'bold'
+        fontweight: 'bold',
+        backgroundColor: '#392DE9',
+        height: 45
     },
     content: {
         flex: 1,
