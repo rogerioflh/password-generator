@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Pressable } from "react-native";
 export function PasswordItem({data, removePassword}){
     return (
         <Pressable onLongPress={removePassword} style={styles.container}>
-            <Text> {data} </Text>
+            <Text style = {{color: '#FFF'}} > {data} </Text>
         </Pressable>
     );
 }
