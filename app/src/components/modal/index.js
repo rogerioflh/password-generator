@@ -70,7 +70,9 @@ const styles = StyleSheet.create({
     },
     text: {
         color: "#FFF",
-        textAlign: "center"
+        textAlign: "center",
+        backgroundColor: '#000',
+        borderRadius: 8
     },
     buttonArea: {
         flexDirection: 'row', /*um ao lado do outro*/
@@ -84,7 +86,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 14,
         marginBottom: 14,
-        padding: 8
+        padding: 8,
+        backgroundColor:'#7B7C7D',
+        borderRadius: 8
     },
     buttonSaveText: {
         color: "#FFF",
